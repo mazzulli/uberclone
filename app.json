@@ -1,19 +1,20 @@
 {
   "expo": {
-    "name": "UberCloneExpo",
+    "name": "Uber Ux Design",
+    "description": "Replicação da tela inicial do Uber apenas para treinamento.",
     "slug": "UberCloneExpo",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
+    "githubUrl": "https://github.com/mazzulli/uberclone.git",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,7 +23,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ssitconsulting.uberclone"
+    },
+    "android": {
+      "package": "com.ssitconsulting.uberclone"
     }
+
   }
 }
