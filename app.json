@@ -27,8 +27,12 @@
       "bundleIdentifier": "com.ssitconsulting.uberclone"
     },
     "android": {
-      "package": "com.ssitconsulting.uberclone"
+      "package": "com.ssitconsulting.uberclone",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCwWkXEXlAMHAsXrLC8g2faTIDIl1j5TeI"
+        }
+      }
     }
-
   }
 }

@@ -2269,7 +2269,7 @@ expo-linear-gradient@~8.1.0:
   resolved "https://registry.yarnpkg.com/expo-linear-gradient/-/expo-linear-gradient-8.1.0.tgz#6933765cf1e76ef2928fd8495e779929699ac4c6"
   integrity sha512-AIy2pOXQRcgk2XE5IgAzd1S2jTFLutiDfveNm6m3fPAk00Rw4qFe98qzte1ayNrGYLJvQ2xq/Y7C0BmBP051mg==
 
-expo-location@~8.1.0:
+expo-location@^8.1.0, expo-location@~8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/expo-location/-/expo-location-8.1.0.tgz#6a71ad9a8b78d5f016a30a02013c3b28f46d0b1b"
   integrity sha512-G9JvsK1t9Z5Iybf+FCG81Jgm9Ee9leqpazxOPVabUJEWu/55Iex3yLGX04BuIA4ozAlJKBPzkhPdyqKdC7zrSw==
@@ -3227,6 +3227,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
 lodash.throttle@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
@@ -4145,7 +4150,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4166,6 +4171,11 @@ pump@^3.0.0:
   dependencies:
     end-of-stream "^1.1.0"
     once "^1.3.1"
+
+qs@^5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-5.2.1.tgz#801fee030e0b9450d6385adc48a4cc55b44aedfc"
+  integrity sha1-gB/uAw4LlFDWOFrcSKTMVbRK7fw=
 
 qs@^6.5.0:
   version "6.9.3"
@@ -4205,10 +4215,31 @@ react-is@^16.12.0, react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
+react-native-google-places-autocomplete@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/react-native-google-places-autocomplete/-/react-native-google-places-autocomplete-1.4.1.tgz#309e28c43a8c939abe44d93a7616845e38788888"
+  integrity sha512-VeaHyBoH8h+BgMRm6s50ewu3OIv/tT5+7XXnJjWYI4e9O4LKDQBKnb+rwSsOTPT1HJcAyNTBVtEV9vmMywJHLw==
+  dependencies:
+    lodash.debounce "^4.0.8"
+    prop-types "^15.5.10"
+    qs "^5.2.0"
+
+react-native-google-places@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-google-places/-/react-native-google-places-3.1.2.tgz#6aa11f76da6bd58aa9ec1d1b3e2c85edb4ced2ce"
+  integrity sha512-aKPbGHga3k/Vkfw9NMf/1t0sivdqxn4qzCbEyAfmhxO7Mlqv9Nljjnez6rp6MZGwh89ss3/a9lhM4ulyZ6o0ew==
+
 react-native-maps@0.26.1:
   version "0.26.1"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.26.1.tgz#6ec316259b38d259c8974448d894bd7a23101da4"
   integrity sha512-p4VTB8YB5ZmOmDRCUpoHZkm05amZwhIo04AJMBbB9+JAR2PNNfpo0vceoWX0Mag4wnePkdzPomeWMplr/wimTg==
+
+react-native-places-input@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-places-input/-/react-native-places-input-1.1.2.tgz#0e4dc323fc88ba2f8eba130ec58a32a43c258b8c"
+  integrity sha512-9HrgwCjNvN2tL7Xpr6oFNbAId+ECCT832nwJ9jR+YgpZg69zfJBWMBAkoClj3ZlVj5uAVFXQyq6bOKWCn9cg2Q==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-native-view-shot@3.1.2:
   version "3.1.2"
